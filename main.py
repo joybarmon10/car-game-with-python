@@ -256,6 +256,10 @@ while running:
                     score = 0
                     vehicle_group.empty()
                     player.rect.center = [player_x, player_y]
+                    
+                    # Start playing the music again
+                    pygame.mixer.music.play(-1)   
+                     
                 elif event.key == K_n:
                     # exit the loops
                     gameover = False
